@@ -1,0 +1,38 @@
+@keyframes float {
+0% {
+    transform: translateY(0px);
+}
+
+50% {
+    transform: translateY(-15px);
+}
+
+100% {
+    transform: translateY(0px);
+}
+}
+
+.floating {
+animation: float 4s ease-in-out infinite;
+}
+
+.astronaut-container {
+filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.4));
+}
+
+.astronaut-svg {
+width: 180px;
+height: 180px;
+}
+
+.astronaut-shadow {
+position: absolute;
+bottom: -10px;
+left: 50%;
+transform: translateX(-50%);
+width: 100px;
+height: 10px;
+background: rgba(59, 130, 246, 0.2);
+border-radius: 50%;
+filter: blur(5px);
+}
